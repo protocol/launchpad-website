@@ -12,10 +12,6 @@
     },
 
     {
-      "target": "\"blog.html\"",
-      "replace_by": "\"/blog\""
-    },
-    {
       "target": "\"contact.html\"",
       "replace_by": "\"/contact\""
     },
@@ -83,13 +79,8 @@
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
     },
-    {
-      "name": "blog",
-      "filepath": "blog.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
-    },
+
+  
     {
       "name": "contact",
       "filepath": "contact.html",
