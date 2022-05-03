@@ -5,33 +5,60 @@
     "root_file_name": "index.html"
   },
   "links_replacements": [
-    {
-      "target": "\"developers.html\"",
-      "replace_by": "\"/developers\""
-    },
+  
     {
       "target": "\"about.html\"",
       "replace_by": "\"/about\""
     },
+
     {
-      "target": "\"faq.html\"",
-      "replace_by": "\"/faq\""
+      "target": "\"blog.html\"",
+      "replace_by": "\"/blog\""
     },
     {
+      "target": "\"contact.html\"",
+      "replace_by": "\"/contact\""
+    },
+    {
+      "target": "\"detail_features.html\"",
+      "replace_by": "\"/detail features\""
+    },
+    {
+      "target": "\"detail_post.html\"",
+      "replace_by": "\"/post\""
+    },
+    {
+      "target": "\"detail_team.html\"",
+      "replace_by": "\"/team\""
+    }
+    ,{
+      "target": "\"features.html\"",
+      "replace_by": "\"/features\""
+    }
+
+    ,{
+      "target": "\"image-license-info.html\"",
+      "replace_by": "\"/image license info\""
+    }
+
+    ,{
       "target": "\"index.html\"",
-      "replace_by": "\"/\""
-    },
-    {
+      "replace_by": "\"/index\""
+    }
+
+    ,{
+      "target": "\"premium.html\"",
+      "replace_by": "\"/premium\""
+    }
+
+    ,{
       "target": "\"pricing.html\"",
       "replace_by": "\"/pricing\""
-    },
-    {
-      "target": "\"privacy-policy.html\"",
-      "replace_by": "\"/privacy-policy\""
-    },
-    {
-      "target": "\"terms-of-service.html\"",
-      "replace_by": "\"/terms-of-service\""
+    }
+
+    ,{
+      "target": "\"style-guide.html\"",
+      "replace_by": "\"/style guide\""
     }
   ],
   "file_links_replacement": [
@@ -50,13 +77,6 @@
   ],
   "transforms": [
     {
-      "name": "developers",
-      "filepath": "developers.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
-    },
-    {
       "name": "about",
       "filepath": "about.html",
       "move_to_subfolder": true,
@@ -64,8 +84,50 @@
       "apply_file_links_replacements": true
     },
     {
-      "name": "faq",
-      "filepath": "faq.html",
+      "name": "blog",
+      "filepath": "blog.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },
+    {
+      "name": "contact",
+      "filepath": "contact.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },
+    {
+      "name": "detail features",
+      "filepath": "detail_features.html",
+      "move_to_subfolder": false,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": false
+    },
+    {
+      "name": "post",
+      "filepath": "detail_post.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },
+    {
+      "name": "team",
+      "filepath": "team.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },
+    {
+      "name": "features",
+      "filepath": "features.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },
+    {
+      "name": "image license info",
+      "filepath": "image-license-info.html",
       "move_to_subfolder": true,
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
@@ -73,10 +135,18 @@
     {
       "name": "index",
       "filepath": "index.html",
-      "move_to_subfolder": false,
+      "move_to_subfolder": true,
       "apply_links_replacements": true,
-      "apply_file_links_replacements": false
+      "apply_file_links_replacements": true
     },
+    {
+      "name": "premium",
+      "filepath": "premium.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },
+
     {
       "name": "pricing",
       "filepath": "pricing.html",
@@ -85,15 +155,8 @@
       "apply_file_links_replacements": true
     },
     {
-      "name": "privacy-policy",
-      "filepath": "privacy-policy.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
-    },
-    {
-      "name": "terms-of-service",
-      "filepath": "terms-of-service.html",
+      "name": "style guide",
+      "filepath": "style-guide.html",
       "move_to_subfolder": true,
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
