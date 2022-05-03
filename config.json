@@ -113,7 +113,7 @@
     },
     {
       "name": "team",
-      "filepath": "team.html",
+      "filepath": "detail_team.html",
       "move_to_subfolder": true,
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
