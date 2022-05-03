@@ -129,10 +129,15 @@ figcaption {
   max-width: 1170px;
   margin-right: 0px;
   margin-left: 0px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -144,20 +149,29 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  overflow: auto;
   width: 100%;
+  height: auto;
   margin-top: -90px;
   padding: 210px 30px 120px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/image-header.jpg');
-  background-position: 50% 50%;
+  background-image: url('../images/Karla-under-4-LPW.jpg');
+  background-position: 0px 0px;
   background-size: cover;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  -o-object-fit: none;
+  object-fit: none;
 }
 
 .navigation-links {
@@ -197,9 +211,9 @@ figcaption {
 
 .navigation-button {
   margin-left: 15px;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 4px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 2, 0.91);
   -webkit-transition: background-color 200ms ease, color 200ms ease;
   transition: background-color 200ms ease, color 200ms ease;
   font-family: 'Libre Franklin', sans-serif;
@@ -222,6 +236,10 @@ figcaption {
 }
 
 .h1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 0px;
   margin-bottom: 30px;
   font-family: 'Libre Franklin', sans-serif;
@@ -255,11 +273,11 @@ figcaption {
   margin-top: 50px;
   padding: 15px 30px;
   border-radius: 4px;
-  background-color: #5ab963;
+  background-color: #b3b3b3;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
   font-family: 'Libre Franklin', sans-serif;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   line-height: 30px;
   font-weight: 800;
@@ -270,7 +288,12 @@ figcaption {
 }
 
 .button.cc-cta {
+  display: block;
   margin-top: 0px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 .button.cc-banner {
@@ -378,6 +401,10 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #1a1c49;
+  background-image: url('../images/lp_notion_banner.png');
+  background-position: 0px 0px;
+  background-size: auto;
 }
 
 .h2 {
@@ -538,7 +565,7 @@ figcaption {
 }
 
 .slide {
-  background-image: url('../images/image-slider-01.jpg');
+  background-image: url('../images/lp_notion_banner.png');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -567,7 +594,7 @@ figcaption {
 }
 
 .slide-3 {
-  background-image: url('../images/image-slider-03.jpg');
+  background-image: url('../images/Karla-under-4-LPW.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }

@@ -43,7 +43,7 @@
 
     ,{
       "target": "\"index.html\"",
-      "replace_by": "\"/index\""
+      "replace_by": "\"/\""
     }
 
     ,{
@@ -135,9 +135,9 @@
     {
       "name": "index",
       "filepath": "index.html",
-      "move_to_subfolder": true,
+      "move_to_subfolder": false,
       "apply_links_replacements": true,
-      "apply_file_links_replacements": true
+      "apply_file_links_replacements": false
     },
     {
       "name": "premium",
