@@ -3,15 +3,19 @@ h1 {
   margin-bottom: 10px;
   font-size: 38px;
   line-height: 44px;
-  font-weight: bold;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
 }
 
 h2 {
   margin-top: 20px;
   margin-bottom: 10px;
+  float: none;
   font-size: 32px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h3 {
@@ -145,6 +149,7 @@ figcaption {
 }
 
 .header {
+  position: static;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -153,7 +158,12 @@ figcaption {
   width: 100%;
   height: auto;
   margin-top: -90px;
-  padding: 210px 30px 120px;
+  padding: 210px 30px 342px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -210,7 +220,17 @@ figcaption {
 }
 
 .navigation-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  width: auto;
   margin-left: 15px;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   border: 2px solid #000;
   border-radius: 4px;
   background-color: rgba(0, 0, 2, 0.91);
@@ -236,18 +256,44 @@ figcaption {
 }
 
 .h1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  position: relative;
+  top: -95px;
+  display: inline-block;
+  overflow: scroll;
+  margin: 129px auto 30px;
+  padding-right: 0px;
+  padding-bottom: 17px;
+  clear: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
   font-family: 'Libre Franklin', sans-serif;
   color: #fff;
   font-size: 72px;
-  line-height: 78px;
+  line-height: 75px;
   font-weight: 800;
+  text-align: center;
   letter-spacing: -1px;
+  -o-object-fit: fill;
+  object-fit: fill;
+  -o-object-position: 50% 30%;
+  object-position: 50% 30%;
 }
 
 .h1.cc-black {
@@ -258,14 +304,21 @@ figcaption {
 }
 
 .paragraph {
+  position: relative;
+  bottom: 111px;
+  float: none;
   font-family: 'IBM Plex Mono', sans-serif;
   color: #fff;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 28px;
   font-weight: 400;
+  -webkit-column-count: auto;
+  column-count: auto;
+  white-space: normal;
 }
 
 .paragraph.cc-gray {
+  display: block;
   color: #999;
 }
 
@@ -308,8 +361,14 @@ figcaption {
 .container {
   position: relative;
   z-index: 1;
+  overflow: scroll;
   width: 100%;
   max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 0px;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .container.cc-center {
@@ -325,6 +384,10 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: transparent;
+  color: #2587b1;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .container.cc-cta {
@@ -411,7 +474,7 @@ figcaption {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: 'Libre Franklin', sans-serif;
-  color: #b3b3b3;
+  color: rgba(6, 4, 17, 0.64);
   font-size: 24px;
   line-height: 36px;
   font-weight: 300;
@@ -419,10 +482,16 @@ figcaption {
 
 .h2.cc-center {
   margin-bottom: 40px;
+  border: 1px solid #fff;
+  color: #fafafa;
+  text-transform: none;
 }
 
 .h2.cc-2-rows {
+  display: block;
   margin-bottom: 25px;
+  margin-left: -149px;
+  padding-left: 0px;
 }
 
 .h2.cc-white-text {
@@ -449,6 +518,23 @@ figcaption {
 }
 
 .text-span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   color: #000;
   font-weight: 800;
 }
@@ -458,12 +544,7 @@ figcaption {
 }
 
 .feature-item-container {
-  height: 330px;
-  padding: 50px 40px;
-  border: 1px solid #f7f7f7;
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
-  -webkit-transition: box-shadow 200ms ease;
-  transition: box-shadow 200ms ease;
+  display: block;
 }
 
 .collection-list {
@@ -525,10 +606,7 @@ figcaption {
 
 .slider-section {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-top: 360px;
   padding-right: 30px;
   padding-left: 30px;
@@ -601,14 +679,17 @@ figcaption {
 
 .body {
   background-color: #000;
+  color: #fafafa;
   text-align: left;
 }
 
 .about {
+  position: static;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   padding: 115px 30px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -618,7 +699,13 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #fafafa;
+  background-color: #1a1c49;
+  background-image: url('../images/lp_notion_banner.png');
+  background-position: 0px 0px;
+  background-size: auto;
+  color: #5ab963;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .link {
@@ -835,7 +922,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 120px 30px 150px;
+  padding: 100px 30px 150px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -844,7 +931,10 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0a0e1a;
+  background-color: #010007;
+  background-image: url('../images/Colo-Weeks-2022.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
 }
 
 .footer-column {
@@ -887,6 +977,13 @@ figcaption {
 
 .link-footer {
   margin-bottom: 25px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
   -webkit-transition: color 200ms ease;
   transition: color 200ms ease;
   font-family: 'Libre Franklin', sans-serif;
@@ -1028,7 +1125,7 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #5ab963;
+  background-color: #050c2a;
 }
 
 .header-inner.cc-header-extra {
@@ -1036,7 +1133,25 @@ figcaption {
 }
 
 .header-inner-content {
+  position: relative;
+  top: -12px;
+  overflow: auto;
   width: 57%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .inner-category {
@@ -1079,24 +1194,7 @@ figcaption {
 }
 
 .premium-intro {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 120px 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: block;
 }
 
 .premium-image-banner {
@@ -1107,14 +1205,19 @@ figcaption {
   overflow: hidden;
   max-height: 720px;
   max-width: 1440px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1948,6 +2051,80 @@ figcaption {
   border-color: rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.05);
   line-height: 24px;
+}
+
+.heading {
+  color: #fff;
+}
+
+.heading-2 {
+  color: #fff;
+}
+
+.image-3 {
+  width: 6%;
+  height: 74.878472%;
+  max-width: 5%;
+  margin-right: 0px;
+  margin-left: auto;
+  padding-top: 0px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border-radius: 0px;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.div-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  justify-items: start;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-align-content: start;
+  -ms-flex-line-pack: start;
+  align-content: start;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-areas: "Area Area-2 Area-3 Area-4";
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.image-4 {
+  display: inline;
+  overflow: auto;
+  width: 100px;
+  height: 100px;
+}
+
+.image-5 {
+  display: block;
+  margin-right: -359px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 @media screen and (max-width: 991px) {
