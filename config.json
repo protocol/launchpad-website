@@ -7,23 +7,15 @@
   "links_replacements": [
   
     {
-      "target": "\"about-launchpad.html\"",
-      "replace_by": "\"/about-launchpad\""
-    },
-
-    {
       "target": "\"about.html\"",
       "replace_by": "\"/about\""
     },
 
     {
-      "target": "\"contact.html\"",
-      "replace_by": "\"/contact\""
-    },
-    {
       "target": "\"detail_features.html\"",
       "replace_by": "\"/detail features\""
     },
+
     {
       "target": "\"detail_post.html\"",
       "replace_by": "\"/post\""
@@ -31,11 +23,6 @@
     {
       "target": "\"detail_team.html\"",
       "replace_by": "\"/team\""
-    }
-
-    ,{
-      "target": "\"image-license-info.html\"",
-      "replace_by": "\"/image license info\""
     }
 
     ,{
@@ -48,10 +35,6 @@
       "replace_by": "\"/premium\""
     }
 
-    ,{
-      "target": "\"style-guide.html\"",
-      "replace_by": "\"/style guide\""
-    }
   ],
   "file_links_replacement": [
     {
@@ -69,28 +52,13 @@
   ],
   "transforms": [
     {
-      "name": "about-launchpad",
+      "name": "about",
       "filepath": "about-launchpad.html",
       "move_to_subfolder": true,
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
     },
-
-    {
-      "name": "about",
-      "filepath": "about.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
-    },
   
-    {
-      "name": "contact",
-      "filepath": "contact.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
-    },
     {
       "name": "detail features",
       "filepath": "detail_features.html",
@@ -98,6 +66,7 @@
       "apply_links_replacements": true,
       "apply_file_links_replacements": false
     },
+
     {
       "name": "post",
       "filepath": "detail_post.html",
@@ -105,6 +74,7 @@
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
     },
+    
     {
       "name": "team",
       "filepath": "detail_team.html",
@@ -113,13 +83,6 @@
       "apply_file_links_replacements": true
     },
 
-    {
-      "name": "image license info",
-      "filepath": "image-license-info.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
-    },
     {
       "name": "index",
       "filepath": "index.html",
@@ -133,14 +96,7 @@
       "move_to_subfolder": true,
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
-    },
-
-    {
-      "name": "style guide",
-      "filepath": "style-guide.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
     }
+
   ]
 }
