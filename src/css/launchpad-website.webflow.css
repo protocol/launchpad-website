@@ -397,12 +397,20 @@ figcaption {
 
 .paragraph.cc-gray.big-word-subpara {
   padding-top: 10px;
+  font-family: 'IBM Plex Mono', sans-serif;
+  color: #002256;
+  font-weight: 300;
 }
 
 .paragraph.cc-gray.launchpad-onboarding {
   padding-top: 0px;
   color: #000;
   font-size: 20px;
+  font-weight: 400;
+}
+
+.paragraph.residence-font-fix {
+  font-weight: 300;
 }
 
 .button {
@@ -572,6 +580,7 @@ figcaption {
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
+  color: #000;
   text-align: center;
   -o-object-fit: contain;
   object-fit: contain;
@@ -757,6 +766,7 @@ figcaption {
   overflow: auto;
   margin-right: 0px;
   margin-left: 0px;
+  color: #002256;
   text-align: center;
 }
 
@@ -2495,6 +2505,12 @@ figcaption {
   color: #fff;
 }
 
+.heading-3.heading-resident-font-change {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+}
+
 .paragraph-2 {
   padding-bottom: 26px;
   color: #fafafa;
@@ -2504,12 +2520,25 @@ figcaption {
   white-space: normal;
 }
 
+.paragraph-2.font-change-former-residents {
+  font-family: Lato, sans-serif;
+  font-size: 175%;
+  font-weight: 400;
+}
+
 .bold-text {
   margin-right: auto;
   margin-left: auto;
   color: #fafafa;
   font-size: 100%;
   line-height: 100%;
+}
+
+.bold-text.font-change {
+  font-family: Lato, sans-serif;
+  font-size: 175%;
+  line-height: 200%;
+  font-weight: 700;
 }
 
 .feature-section {
@@ -2549,6 +2578,13 @@ figcaption {
   object-fit: contain;
   -o-object-position: 50% 50%;
   object-position: 50% 50%;
+}
+
+.feature-image.curriculum-image {
+  display: inline-block;
+  width: 300%;
+  height: 230%;
+  max-width: 200%;
 }
 
 .gallery {
@@ -2692,6 +2728,8 @@ figcaption {
 
 .white-text {
   color: #fff;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 .arial-font-change {
@@ -2777,6 +2815,20 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   text-align: left;
+}
+
+.launchpad-curriculum {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.div-block-curriculum {
+  margin-right: 23px;
+  margin-left: 186px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 @media screen and (max-width: 991px) {
