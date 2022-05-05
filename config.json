@@ -53,7 +53,7 @@
   "transforms": [
     {
       "name": "about",
-      "filepath": "about-launchpad.html",
+      "filepath": "about.html",
       "move_to_subfolder": true,
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
