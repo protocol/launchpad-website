@@ -7,6 +7,11 @@
   "links_replacements": [
   
     {
+      "target": "\"about-launchpad.html\"",
+      "replace_by": "\"/about-launchpad\""
+    },
+
+    {
       "target": "\"about.html\"",
       "replace_by": "\"/about\""
     },
@@ -27,10 +32,6 @@
       "target": "\"detail_team.html\"",
       "replace_by": "\"/team\""
     }
-    ,{
-      "target": "\"features.html\"",
-      "replace_by": "\"/features\""
-    }
 
     ,{
       "target": "\"image-license-info.html\"",
@@ -45,11 +46,6 @@
     ,{
       "target": "\"premium.html\"",
       "replace_by": "\"/premium\""
-    }
-
-    ,{
-      "target": "\"pricing.html\"",
-      "replace_by": "\"/pricing\""
     }
 
     ,{
@@ -73,13 +69,20 @@
   ],
   "transforms": [
     {
+      "name": "about-launchpad",
+      "filepath": "about-launchpad.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },
+
+    {
       "name": "about",
       "filepath": "about.html",
       "move_to_subfolder": true,
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
     },
-
   
     {
       "name": "contact",
@@ -109,13 +112,7 @@
       "apply_links_replacements": true,
       "apply_file_links_replacements": true
     },
-    {
-      "name": "features",
-      "filepath": "features.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
-    },
+
     {
       "name": "image license info",
       "filepath": "image-license-info.html",
@@ -138,13 +135,6 @@
       "apply_file_links_replacements": true
     },
 
-    {
-      "name": "pricing",
-      "filepath": "pricing.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
-    },
     {
       "name": "style guide",
       "filepath": "style-guide.html",
